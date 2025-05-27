@@ -96,6 +96,8 @@ const ForgotPassword = () => {
       });
 
       setSuccess('Password reset successfully! ');
+      setNewPassword('');
+      setConfirmPassword('');
 
     } catch (err) {
       const errorMessage = err.response?.data?.message || 'Failed to reset password';
